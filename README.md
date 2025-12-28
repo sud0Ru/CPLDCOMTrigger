@@ -7,6 +7,8 @@
 A Python script depends on Impacket scripts to trigger the loading of a .cpl file into memory using a DCOM object. The CPL file path must already be added to the registry.
 The script uses the Open function in the IOpenControlPanel interface to load the CPL (Control Panel Item) DLL into memory.
 
+Full research: https://securelist.com/lateral-movement-via-dcom-abusing-control-panel/118232/
+
 ## Usage
 
 `python3 CPLTrig.py [[domain/]username[:password]@]<targetName or address> -cpl 'mycpl'`
